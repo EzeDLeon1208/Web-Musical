@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mi Web Musical</title>
+
+        <!--Estilos CSS-->
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
+        <script type="text/javascript" src="validar_campos.js"></script>
+    </head>
+        <body>
+            <header>
+                <div id="logo">
+                    <!--Titulo de mi pagina-->    
+                    <h1>Mi Web Musical</h1>
+                </div>               
+                  <nav  id="menu">  
+                     <ul>
+                       <!--Menú-->
+                       <li><a href="index.html" title="Inicio">Inicio</a></li>
+                       <li><a href="contenidos.html">Contenido</a></li>
+                       <li><a href="contactanos.html">Contactanos</a></li>
+                     </ul>
+                  </nav>  
+            </header>
+
+               <style>
+                   .box{
+                       width: 250px;
+                       height: 250px;
+                       float: left;
+                       margin: 20px;
+                   }
+                   .dashed{
+                       border: 3px dashed black;
+                       padding: 8px;
+                   }
+               </style>
+
+               <hr/>
+
+               <!--Contenido de contactos-->
+                <h2>Contactanos</h2>
+                <div class="box">
+                   
+                    <form action="#" method="POST" id="formulario" onsubmit="return false;">
+                        <p> 
+                            <label for="nombre">Nombre</label> <br/>
+                            <input type="text" name="nombre" id="nombre" /> <br/> 
+                            <span id="error_nombre"></span>
+                        </p>
+                        <p>                                 
+                            <label for="email">Email</label> <br/>
+                            <input type="text" name="email" id="email" /> <br/>
+                            <span id="error_mail"></span>
+                        </p>         
+                        <p>         
+                            <label for="comentario">Comentario</label> <br/>
+                            <textarea name="comentario" id="comentario"></textarea> 
+                        </p> 
+                            <input type="submit" value="enviar email"/>
+                    </form>     
+                </div> 
+                
+                <div class="box dashed">
+                    <h3>Datos del Usuario</h3>
+                    <hr>
+                    <p id="p_nombre">
+                        Nombre: <span></span>    
+                    </p>
+                    <p id="p_email">
+                        Email: <span></span>
+                    </p>
+                    <p id="p_comentario">
+                        Comentario: <span></span>
+                    </p>
+                </div>
+            </ul>
+        </body>
+</html>
